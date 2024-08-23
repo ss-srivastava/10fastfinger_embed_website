@@ -53,7 +53,7 @@
         .main-content {
             flex: 2;
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             background: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -98,7 +98,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 100%; /* Responsive width */
-            height: 300px; /* Fixed height */
+            height: 460px; /* Fixed height */
         }
 
         /* Adjustments for images in the main content */
@@ -138,8 +138,8 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Word Input Game!</h1>
-        <p>Type your words and see how quickly you can type!</p>
+        <h1>Welcome to the Custom Typing Test!</h1>
+        <p>Type your favourite text and see how quickly you can type!</p>
     </header>
     <div class="container">
         <div class="sidebar">
@@ -147,9 +147,9 @@
             <img src="pexels-ihsanaditya-2045600.jpg" alt="Dyna">
         </div>
         <div class="main-content">
-            <h1>Word Input Game</h1>
+            <h1>Custom Typing Test</h1>
             <form onsubmit="event.preventDefault(); updateIframe();">
-                <input type="text" id="textInput" placeholder="Enter words" required>
+                <input type="text" id="textInput" placeholder="Enter custom text here" required>
                 <button type="submit">Submit</button>
             </form>
             <iframe id="textIframe" src="" frameborder="0"></iframe>
